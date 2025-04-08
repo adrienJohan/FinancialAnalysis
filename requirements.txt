@@ -5,3 +5,5 @@ yfinance
 mysql-connector-python
 textblob
 fredapi
+fastapi
+flet[all]
