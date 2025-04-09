@@ -1,5 +1,4 @@
-CREATE DATABASE IF NOT EXISTS FinancialAnalysis;
-USE FinancialAnalysis;
+USE fletdb;
 
 CREATE TABLE Prices (
     price_id INT AUTO_INCREMENT PRIMARY KEY,

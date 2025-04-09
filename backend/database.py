@@ -6,9 +6,9 @@ class Database:
         try:
             self.conn = mysql.connector.connect(
                 host="localhost",
-                user="root",
-                password="ton_mot_de_passe",
-                database="test_db"
+                user="iantsogod",
+                password="nahida",
+                database="fastapi"
             )
             self.cursor = self.conn.cursor()
             print("Connexion réussie à MySQL")

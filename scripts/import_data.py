@@ -1,16 +1,13 @@
-
-
-
 import mysql.connector
 import pandas as pd
 import os
 
-# Connexion à MySQL
+
 db = mysql.connector.connect(
     host="localhost",
-    user="Analysis_user",  
-    password="SuperMotDePasse!123",  
-    database="FinancialAnalysis"
+    user="fletuser",  
+    password="fletpassword",  
+    database="fletdb"
 )
 
 cursor = db.cursor()

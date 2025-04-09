@@ -1,5 +1,6 @@
 import flet as ft
 from pages.Login import LoginPage
+from pages.Signup import SignUpPage
 
 def main(page: ft.Page):
     page.title='Market studies'
@@ -9,6 +10,8 @@ def main(page: ft.Page):
         page.views.clear()
         if page.route == "/":
             page.views.append(LoginPage(page))
+        elif page.route=="/signup":
+            page.views.append(SignUpPage(page))
         page.update()
 
     def view_pop(view):
