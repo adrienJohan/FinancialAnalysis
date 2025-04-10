@@ -5,4 +5,3 @@ router=APIRouter(
     tags=["prices"],
     responses={404: {"description": "Not found"}},
 )
-
