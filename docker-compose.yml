@@ -1,0 +1,17 @@
+
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: fletdb
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: fletuser
+      MYSQL_PASSWORD: fletpassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/home/iantso/dbBDD
+
+volumes:
+  mysql_data:
